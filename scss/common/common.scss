@@ -1,0 +1,45 @@
+.body {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: $font-md;
+}
+
+.container-lg,
+.container-md {
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-lg {
+  max-width: $container-lg-width;
+}
+
+.container-md {
+  max-width: $container-md-width;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  width: 100%;
+}
+a,
+label {
+  color: $accent-color;
+  text-decoration: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.align-items-center {
+  align-items: center;
+}
