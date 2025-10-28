@@ -2,12 +2,13 @@
   &__media-menu-btn {
     display: none;
   }
+
   @media (min-width: $breakpoint_lg) {
-    [for="header__media-menu-btn"] {
+    [for="header__media-menu-btn"],
+    .hidden-desktop {
       display: none;
     }
   }
-
 
   @media (max-width: $breakpoint_lg) {
     & {
@@ -22,8 +23,7 @@
     }
 
     &__social {
-      min-width: 328px;
-      width: 50%;
+      width: initial;
     }
 
     & [for="header__media-menu-btn"] {
@@ -35,6 +35,9 @@
       font-weight: 700;
     }
 
+    &__social-cta {
+      display: none;
+    }
 
     &__navigation {
       flex-direction: row-reverse;
@@ -80,5 +83,17 @@
 
     }
 
+  }
+
+  @media (max-width: $breakpoint_xs) {
+    &__navigation {
+      gap: 20px;
+    }
+
+   &__social-icons {
+     ul {
+       gap: 20px;
+     }
+   }
   }
 }

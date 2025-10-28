@@ -206,6 +206,14 @@ label {
 .header__social-icons ul {
   gap: 38px;
 }
+.header__social-icons ul i {
+  font-size: 20px;
+}
+.header__social-icons ul i:hover {
+  transition: 0.3s;
+  color: #5E81FE;
+  transform: scale(1.2);
+}
 .header__social-cta a {
   display: inline-block;
   background-color: #D2E1FF;
@@ -220,7 +228,8 @@ label {
   display: none;
 }
 @media (min-width: 875px) {
-  .header [for=header__media-menu-btn] {
+  .header [for=header__media-menu-btn],
+  .header .hidden-desktop {
     display: none;
   }
 }
@@ -235,8 +244,7 @@ label {
     justify-content: space-between;
   }
   .header__social {
-    min-width: 328px;
-    width: 50%;
+    width: initial;
   }
   .header [for=header__media-menu-btn] {
     background-color: #D2E1FF;
@@ -245,6 +253,9 @@ label {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
+  }
+  .header__social-cta {
+    display: none;
   }
   .header__navigation {
     flex-direction: row-reverse;
@@ -278,6 +289,14 @@ label {
   }
   .header__media-menu-btn:checked + nav {
     display: initial;
+  }
+}
+@media (max-width: 365px) {
+  .header__navigation {
+    gap: 20px;
+  }
+  .header__social-icons ul {
+    gap: 20px;
   }
 }
 
