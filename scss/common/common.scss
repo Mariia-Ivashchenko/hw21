@@ -31,10 +31,27 @@ a,
 label {
   color: $accent-color;
   text-decoration: none;
+  display: inline-block;
+}
+
+p{
+  color: $accent-color;
 }
 
 .d-flex {
   display: flex;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+.direction-row {
+  flex-direction: row;
+}
+
+.justify-content-center {
+  justify-content: center;
 }
 
 .justify-content-end {
@@ -43,4 +60,8 @@ label {
 
 .align-items-center {
   align-items: center;
+}
+
+.text-center {
+  text-align: center;
 }

@@ -12,9 +12,12 @@
 
   @media (max-width: $breakpoint_lg) {
     & {
-      position: relative;
       min-height: $header-height;
       max-height: $header-height;
+    }
+
+    &__wrapper {
+      position: relative;
     }
 
     .row {
@@ -53,6 +56,8 @@
         top: $header-height;
         left: 0;
         background-color: #E0E9FF;
+        z-index: 100;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
         menu {
           flex-direction: column;

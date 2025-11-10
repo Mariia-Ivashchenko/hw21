@@ -1,0 +1,27 @@
+.customers {
+  @media (max-width: $breakpoint_lg) {
+    &__content {
+      gap: 50px;
+    }
+  }
+
+  @media (max-width: $breakpoint_md) {
+    &__content {
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: $breakpoint_sm) {
+    .row {
+      justify-content: center;
+    }
+
+    & {
+      margin: 15px auto;
+    }
+
+    &__content {
+      flex-direction: column;
+    }
+  }
+}
