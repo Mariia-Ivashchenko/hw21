@@ -1,12 +1,10 @@
 .plan {
-  height: #{calc(100vh - $header_height)};
   background-color: #F5F8FF;
-  $color-plan: #3D4F9F;
   $secondary-color-plan: #8D96BD;
 
   &__wrapper {
     height: 100%;
-    padding-top: 17vh;
+    padding: 17vh 0;
   }
 
   &__content {
@@ -29,7 +27,7 @@
     line-height: 100%;
     letter-spacing: 10%;
     text-transform: uppercase;
-    color: $color-plan;
+    color: $title-color;
   }
 
   &__title {
@@ -37,7 +35,7 @@
     font-size: $font-xxl;
     line-height: 100%;
     letter-spacing: 0%;
-    color: $color-plan;
+    color: $title-color;
     font-weight: 400;
   }
 

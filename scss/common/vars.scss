@@ -1,5 +1,6 @@
 $main-font: "Roboto", sans-serif;
 $font-quicksand: "Quicksand", sans-serif;
+$font-open-sans: "Open Sans", sans-serif;
 
 $font-xs: 10px;
 $font-sm: 12px;
@@ -13,10 +14,12 @@ $container-md-width: 920px;
 
 $accent-color: #697CA6;
 $secondary-accent-color: #5E81FE;
+$title-color: #3D4F9F;
+
 
 
 $breakpoint_xxl: 1250px;
-
+$breakpoint_xl: 1024px;
 $breakpoint_lg: 875px;
 $breakpoint_md: 768px;
 $breakpoint_sm: 576px;

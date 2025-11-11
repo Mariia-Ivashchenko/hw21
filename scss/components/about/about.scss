@@ -1,0 +1,156 @@
+.about {
+
+  &__wrapper {
+    height: 100%;
+    padding: 13vh 0;
+  }
+
+  &__content {
+    background-image: url('../assets/img/clouds-about.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+  }
+
+  &__title-wrapper {
+    padding-bottom: 72px;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: $font-xs;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 10%;
+    text-transform: uppercase;
+    color: $title-color;
+    padding: 30px 0 20px;
+  }
+
+  &__title {
+    color: $title-color;
+    font-family: $font-quicksand;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+
+  &__features {
+    margin-bottom: 90px;
+
+    &-wrapper {
+      flex-wrap: wrap;
+      gap: 67px;
+      justify-content: space-between;
+    }
+
+    &-item:nth-child(-n+3) {
+
+      &:after {
+        content: "";
+        border: 1px solid #DAE4FE;
+        max-width: 28px;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        right: -50px;
+      }
+    }
+
+    &-item {
+      width: #{calc(25% - 51px)};
+      position: relative;
+
+      img {
+        width: 69px;
+        height: 69px;
+        margin-bottom: 30px;
+      }
+
+      h3 {
+        font-family: $font-open-sans;
+        font-weight: 700;
+        font-size: $font-md;
+        line-height: 177%;
+        letter-spacing: 0;
+        text-align: center;
+        color: #4074F8;
+        margin-bottom: 25px;
+      }
+
+      p {
+        font-family: $font-open-sans;
+        font-weight: 600;
+        font-size: $font-sm;
+        line-height: 177%;
+        letter-spacing: 0;
+        color: #ADB3CB;;
+      }
+    }
+  }
+
+  &__buttons {
+
+    &-item {
+      position: relative;
+
+      a {
+        padding: 13px 15px;
+        font-family: $font-quicksand;
+        font-weight: 700;
+        font-size: $font-sm;
+        line-height: 100%;
+        letter-spacing: 0%;
+      }
+
+      &:first-of-type {
+        a {
+          color: #D43F3F;
+          background-color: #FFD7D7;
+        }
+      }
+
+      &:last-of-type {
+        a {
+          color: #3A79FF;
+          background-color: #D2E1FF;
+        }
+      }
+
+      p {
+        height: 100%;
+        font-family: $font-open-sans;
+        font-weight: 600;
+        font-size: $font-xs;
+        line-height: 177%;
+        letter-spacing: 0;
+        padding: 13px 47px;
+        color: #ADB3CB;
+      }
+
+
+      &:nth-child(2) {
+
+        &:before,
+        &:after {
+          content: "";
+          border: 1px solid #DAE4FE;
+          max-width: 15px;
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          right: 15px;
+        }
+
+        &:after {
+          right: 15px;
+        }
+
+        &:before {
+          left: 15px;
+        }
+      }
+    }
+  }
+}
