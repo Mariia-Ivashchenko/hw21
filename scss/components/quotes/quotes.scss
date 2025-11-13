@@ -1,7 +1,7 @@
 .quotes {
   background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
-  min-height: $quotes-height;
-  max-height: $quotes-height;
+  //min-height: $quotes-height;
+  //max-height: $quotes-height;
   padding: 109px 0;
 
   &__content {
@@ -17,7 +17,7 @@
       font-weight: 600;
       font-size: $font-sm;
       line-height: 189%;
-      letter-spacing: 3%;
+      letter-spacing: 0.03em;
       color: #A4ABC8;;
     }
   }

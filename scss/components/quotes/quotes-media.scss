@@ -1,0 +1,43 @@
+.quotes {
+  @media (max-width: $breakpoint_lg) {
+    &__content {
+      gap: 60px;
+    }
+
+    &__title-wrapper {
+      flex: 1;
+    }
+  }
+
+  @media (max-width: $breakpoint_md) {
+    & {
+      padding: 60px 0;
+    }
+
+    &__content {
+      flex-direction: column;
+      gap: 60px;
+      align-items: center;
+    }
+
+    &__title-wrapper {
+      text-align: center;
+    }
+
+    &__subtitle {
+      padding: 0 0 20px;
+    }
+  }
+
+  @media (max-width: $breakpoint_sm) {
+    &__text-description {
+      padding: 20px 20px 53px;
+    }
+  }
+
+  @media (max-width: $breakpoint_xs) {
+    &__title {
+      font-size: 30px;
+    }
+  }
+}
