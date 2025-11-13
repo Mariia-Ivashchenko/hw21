@@ -3,3 +3,49 @@
   background-position: center center;
   background-size: cover;
 }
+
+%subtitle-default {
+  font-weight: 500;
+  font-size: $font-xs;
+  line-height: 100%;
+  letter-spacing: 10%;
+  text-transform: uppercase;
+  color: $title-color;
+}
+
+%main-title-default {
+  font-family: $font-quicksand;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+  color: $title-color;
+}
+
+%secondary-title-default {
+  font-family: $font-quicksand;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: $title-color;
+}
+
+%less-title-default {
+  font-family: $font-quicksand;
+  font-size: $font-xxl;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: $title-color;
+  font-weight: 400;
+}
+
+%btn-default {
+  font-family: $font-quicksand;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+
+}

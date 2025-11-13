@@ -18,6 +18,8 @@
 
     &__wrapper {
       position: relative;
+      z-index: 100;
+      background-color: white;
     }
 
     .row {

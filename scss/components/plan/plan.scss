@@ -22,21 +22,11 @@
   }
 
   &__subtitle {
-    font-weight: 500;
-    font-size: $font-xs;
-    line-height: 100%;
-    letter-spacing: 10%;
-    text-transform: uppercase;
-    color: $title-color;
+    @extend %subtitle-default;
   }
 
   &__title {
-    font-family: $font-quicksand;
-    font-size: $font-xxl;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: $title-color;
-    font-weight: 400;
+    @extend %less-title-default;
   }
 
   &__description {

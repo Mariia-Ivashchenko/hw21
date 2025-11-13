@@ -1,0 +1,9 @@
+.stats {
+  @media (max-width: $breakpoint_lg) {
+
+    &__content-customers,
+    &__content-users {
+      padding: 33px 40px;
+    }
+  }
+}

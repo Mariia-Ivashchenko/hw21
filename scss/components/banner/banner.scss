@@ -1,6 +1,4 @@
 .banner {
-  $banner-color: #3D4F9F;
-
   background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
   height: calc(100vh - #{$header_height});
   position: relative;
@@ -45,19 +43,11 @@
   }
 
   &__subtitle {
-    font-weight: 500;
-    font-size: $font-xs;
-    line-height: 100%;
-    text-transform: uppercase;
-    color: $banner-color
+    @extend %subtitle-default;
   }
 
   &__title {
-    font-family: $font-quicksand;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 100%;
-    color: $banner-color;
+    @extend %main-title-default;
   }
 
   &__description {

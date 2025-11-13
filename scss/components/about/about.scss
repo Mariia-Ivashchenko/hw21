@@ -17,23 +17,12 @@
   }
 
   &__subtitle {
-    font-weight: 500;
-    font-size: $font-xs;
-    leading-trim: NONE;
-    line-height: 100%;
-    letter-spacing: 10%;
-    text-transform: uppercase;
-    color: $title-color;
+    @extend %subtitle-default;
     padding: 30px 0 20px;
   }
 
   &__title {
-    color: $title-color;
-    font-family: $font-quicksand;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 0%;
+    @extend %secondary-title-default;
   }
 
   &__features {
@@ -97,11 +86,7 @@
 
       a {
         padding: 13px 15px;
-        font-family: $font-quicksand;
-        font-weight: 700;
-        font-size: $font-sm;
-        line-height: 100%;
-        letter-spacing: 0%;
+        @extend %btn-default;
       }
 
       &:first-of-type {

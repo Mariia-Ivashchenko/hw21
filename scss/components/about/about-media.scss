@@ -27,7 +27,7 @@
 
         &:nth-child(-n+3) {
           &:after {
-            right: -50px;
+            display: none;
           }
         }
       }
