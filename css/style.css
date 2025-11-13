@@ -943,4 +943,10 @@ p {
   }
 }
 
+.quotes {
+  background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
+  min-height: 480px;
+  max-height: 480px;
+}
+
 /*# sourceMappingURL=style.css.map */
