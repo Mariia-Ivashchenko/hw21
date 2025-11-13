@@ -125,7 +125,7 @@ button {
   background-size: cover;
 }
 
-.blog__subtitle, .about__subtitle, .plan__subtitle, .banner__subtitle {
+.quotes__subtitle, .blog__subtitle, .about__subtitle, .plan__subtitle, .banner__subtitle {
   font-weight: 500;
   font-size: 10px;
   line-height: 100%;
@@ -151,7 +151,7 @@ button {
   color: #3D4F9F;
 }
 
-.blog__description-text h2, .plan__title {
+.quotes__title, .blog__description-text h2, .plan__title {
   font-family: "Quicksand", sans-serif;
   font-size: 36px;
   line-height: 100%;
@@ -947,6 +947,65 @@ p {
   background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
   min-height: 480px;
   max-height: 480px;
+  padding: 109px 0;
+}
+.quotes__content {
+  gap: 130px;
+  width: 100%;
+}
+.quotes__title-wrapper {
+  flex: 0 0 330px;
+}
+.quotes__title-wrapper p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 189%;
+  letter-spacing: 3%;
+  color: #A4ABC8;
+}
+.quotes__subtitle {
+  padding: 31px 0;
+}
+.quotes__title {
+  padding-bottom: 30px;
+}
+.quotes__text-wrapper {
+  flex: 1;
+  background-color: white;
+  max-width: 423px;
+  margin-bottom: 49px;
+  position: relative;
+}
+.quotes__text-wrapper img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+}
+.quotes__text-description {
+  padding: 41px 70px 53px;
+  color: #676F95;
+  font-size: 14px;
+  line-height: 171%;
+}
+.quotes__controls {
+  gap: 12px;
+  position: absolute;
+  bottom: -78px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.quotes__controls-item {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #D1D6E3;
+}
+.quotes__controls-item:hover, .quotes__controls-item-active {
+  background-color: #5283FF;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
