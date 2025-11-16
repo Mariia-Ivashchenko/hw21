@@ -1,0 +1,7 @@
+.footer {
+  @media (max-width: $breakpoint_sm) {
+    p {
+      padding: 0;
+    }
+  }
+}

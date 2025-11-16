@@ -1159,6 +1159,7 @@ p {
 
 .signup {
   padding: 20vh 0;
+  background-color: #FCFDFF;
 }
 .signup__content {
   width: 100%;
@@ -1223,6 +1224,28 @@ p {
 @media (max-width: 576px) {
   .signup__form-wrapper {
     flex-direction: column;
+  }
+}
+
+.footer {
+  padding: 10vh 0;
+}
+.footer p {
+  color: #AEB8D0;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+  padding-left: 100px;
+}
+
+@media (max-width: 576px) {
+  .footer p {
+    padding: 0;
   }
 }
 
