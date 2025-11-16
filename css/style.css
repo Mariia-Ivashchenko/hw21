@@ -119,13 +119,13 @@ button {
     scroll-behavior: auto !important;
   }
 }
-.banner:before, .banner:after {
+.started:before, .banner:before, .banner:after {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
-.faq__subtitle, .quotes__subtitle, .blog__subtitle, .about__subtitle, .plan__subtitle, .banner__subtitle {
+.started__subtitle, .faq__subtitle, .quotes__subtitle, .blog__subtitle, .about__subtitle, .plan__subtitle, .banner__subtitle {
   font-weight: 500;
   font-size: 10px;
   line-height: 100%;
@@ -134,7 +134,7 @@ button {
   color: #3D4F9F;
 }
 
-.banner__title {
+.started__title, .banner__title {
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
   font-size: 48px;
@@ -160,7 +160,7 @@ button {
   font-weight: 400;
 }
 
-.faq__description-item dd div a, .blog__buttons-wrapper a:last-of-type, .blog__buttons-wrapper a:first-of-type, .about__buttons-item a {
+.started__button-second, .started__button-first, .faq__description-item dd div a, .blog__buttons-wrapper a:last-of-type, .blog__buttons-wrapper a:first-of-type, .about__buttons-item a {
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
   font-size: 13px;
@@ -1107,6 +1107,54 @@ p {
     flex-direction: column;
     gap: 20px;
   }
+}
+
+.started {
+  background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+  position: relative;
+  padding: 15vh 0;
+}
+.started__content {
+  max-width: 712px;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 2;
+}
+.started:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: url("../assets/img/clouds-started.svg");
+}
+.started__title-wrapper {
+  padding-bottom: 40px;
+}
+.started__subtitle {
+  color: white;
+  padding-bottom: 16px;
+}
+.started__title {
+  font-weight: 300;
+  color: white;
+  padding-bottom: 28px;
+}
+.started__description {
+  color: white;
+}
+.started__button-first {
+  padding: 14px 17px;
+  background-color: #ffffff;
+  color: #565F82;
+}
+.started__button-second {
+  padding: 13px 8px;
+  color: #C7D3FF;
+  border: 1px solid #A0B4FF;
 }
 
 /*# sourceMappingURL=style.css.map */
