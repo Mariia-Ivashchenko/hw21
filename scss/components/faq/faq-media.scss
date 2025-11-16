@@ -1,0 +1,12 @@
+.faq {
+  @media (max-width: $breakpoint-lg) {
+    dl {
+      dd {
+        div {
+          flex-direction: column;
+          gap: 20px;
+        }
+      }
+    }
+  }
+}

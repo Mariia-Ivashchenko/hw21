@@ -125,7 +125,7 @@ button {
   background-size: cover;
 }
 
-.quotes__subtitle, .blog__subtitle, .about__subtitle, .plan__subtitle, .banner__subtitle {
+.faq__subtitle, .quotes__subtitle, .blog__subtitle, .about__subtitle, .plan__subtitle, .banner__subtitle {
   font-weight: 500;
   font-size: 10px;
   line-height: 100%;
@@ -142,7 +142,7 @@ button {
   color: #3D4F9F;
 }
 
-.blog__title, .about__title {
+.faq__title, .blog__title, .about__title {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
   font-size: 24px;
@@ -160,7 +160,7 @@ button {
   font-weight: 400;
 }
 
-.blog__buttons-wrapper a:last-of-type, .blog__buttons-wrapper a:first-of-type, .about__buttons-item a {
+.faq__description-item dd div a, .blog__buttons-wrapper a:last-of-type, .blog__buttons-wrapper a:first-of-type, .about__buttons-item a {
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
   font-size: 13px;
@@ -1038,6 +1038,74 @@ p {
 @media (max-width: 365px) {
   .quotes__title {
     font-size: 30px;
+  }
+}
+
+.faq {
+  padding: 20vh 0;
+}
+.faq__content {
+  width: 100%;
+  max-width: 740px;
+  margin: 0 auto;
+}
+.faq__subtitle {
+  padding-bottom: 20px;
+}
+.faq__title {
+  padding-bottom: 68px;
+}
+.faq dl {
+  margin-bottom: 15px;
+}
+.faq__description-item-toggle {
+  display: none;
+}
+.faq__description-item label span {
+  padding-right: 18px;
+}
+.faq__description-item svg {
+  width: 17px;
+  height: 10px;
+  fill: none;
+  color: #8E96B7;
+}
+.faq__description-item dt {
+  padding-bottom: 16px;
+}
+.faq__description-item dt:hover {
+  font-weight: bold;
+}
+.faq__description-item dd {
+  display: none;
+}
+.faq__description-item dd div {
+  width: 100%;
+  gap: 60px;
+}
+.faq__description-item dd div p {
+  flex: 3;
+  padding-left: 56px;
+  font-size: 14px;
+}
+.faq__description-item dd div a {
+  flex: 1;
+  padding: 13px 14px;
+  background-color: #E8ECF4;
+  margin: auto auto;
+  font-weight: 500;
+}
+.faq__description-item-toggle:checked ~ dd {
+  display: initial;
+}
+.faq__description-item-toggle:checked ~ dt svg {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 875px) {
+  .faq dl dd div {
+    flex-direction: column;
+    gap: 20px;
   }
 }
 
