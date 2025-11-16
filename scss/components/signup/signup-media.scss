@@ -1,0 +1,33 @@
+.signup {
+  @media (max-width: $breakpoint_xl) {
+    &__content {
+      gap: 30px;
+    }
+  }
+
+  @media (max-width: $breakpoint_lg) {
+    &__content {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__title-wrapper,
+    &__form {
+      flex: 1;
+    }
+
+    &__title-wrapper {
+      text-align: center;
+
+      p {
+       max-width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint_sm) {
+    &__form-wrapper {
+      flex-direction: column;
+    }
+  }
+}

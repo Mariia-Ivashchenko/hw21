@@ -1,0 +1,52 @@
+.signup {
+  padding: 20vh 0;
+
+  &__content {
+    width: 100%;
+    gap: 80px;
+  }
+
+  &__title-wrapper {
+    flex: 2;
+  }
+
+  &__title {
+    font-family: $font-quicksand;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #3D4F9F;
+    padding-bottom: 18px;
+  }
+
+  &__description {
+    max-width: 330px;
+  }
+
+  &__form {
+    flex: 3;
+
+    &-wrapper {
+      gap: 14px;
+    }
+
+    &-email {
+      @extend %btn-default;
+      flex: 3;
+      padding: 11px 93px 11px 23px;
+      background-color: #EFEFF7;
+      border: none;
+      border-radius: 3px;
+    }
+
+    &-btn {
+      @extend %btn-default;
+      flex: 2;
+      padding: 20px 60px;
+      border: none;
+      background-color: #4D6CE1;
+      color: white;
+    }
+  }
+}
